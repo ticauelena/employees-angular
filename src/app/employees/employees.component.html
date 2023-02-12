@@ -5,17 +5,19 @@
         <th> Gender </th>
         <th> Email </th >
         <th> Phone </th>
-        <th> Hire Date </th>
-        <th> Workeed Type </th>
+        <th th class="width-column"> Hire Date </th>
+        <th th class="width-column"> Workeed Type </th>
         <th> Salary </th>
+        <th> Is Employee? </th>
     </tr>
 
-    <tr> 
-        <td> {{employees.name}} </td>
-        <td> {{employees.gender}} </td>
-        <td> {{employees.email}} </td>
-        <td> {{employees.phone}} </td>
-        <td> {{employees.hireDate}} </td>
-        <td> {{employees.workeedType}} </td>
-        <td> {{employees.salary}} </td>
+    <tr *ngFor="let employee of employees"> 
+            <td> {{employee.name}} </td>
+            <td> {{employee.gender}} </td>
+            <td> {{employee.email}} </td>
+            <td> {{employee.phone}} </td>
+            <td> {{employee.hireDate}} </td>
+            <td> {{employee.workeedType}} </td>
+            <td> {{employee.salary}} </td>
+            <td> <input type="checkbox" value="isEmployee" [checked] = "employee.isEmployee" onclick="return false;"></td>
     </tr>
