@@ -1,9 +1,24 @@
 <h1>Employee List Works!</h1>
-<p> Name: {{data.name}} </p>
-<p> Gender: {{data.gender}} </p>
-<p> Email: {{data.email}} </p>
-<p> Phone: {{data.phone}} </p>
-<p> Hire Date: {{data.hireDate}} </p>
-<p> workeed Type: {{data.workeedType}} </p>
-<p> Salary: {{data.salary}} </p>
-<p> Is Employee: <input type="checkbox" value="isEmployee" [checked] = "data.isEmployee" onclick="return false;"></p>
+<table>
+    <tr> 
+        <th> Name </th>
+        <th> Gender </th>
+        <th> Email </th >
+        <th> Phone </th>
+        <th th class="width-column"> Hire Date </th>
+        <th th class="width-column"> Workeed Type </th>
+        <th> Salary </th>
+        <th> Is Employee? </th>
+    </tr>
+    <tr *ngFor="let employeeList of data"> 
+            <td> {{employeeList.name}} </td>
+            <td> {{employeeList.gender}} </td>
+            <td> {{employeeList.email}} </td>
+            <td> {{employeeList.phone}} </td>
+            <td> {{employeeList.hireDate}} </td>
+            <td> {{employeeList.workeedType}} </td>
+            <td> {{employeeList.salary}} </td>
+            <td> <input type="checkbox" value="isEmployee" [checked] = "employeeList.isEmployee" 
+                onclick="return false;"></td>
+    </tr>
+<table>
