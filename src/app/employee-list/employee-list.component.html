@@ -11,7 +11,8 @@
         <th> Is Employee? </th>
     </tr>
     <tr *ngFor="let employeeList of data"> 
-            <td> {{employeeList.name}} </td>
+        <ng-container *ngIf="employeeList.isEmployee === true">
+             <td> {{employeeList.name}} </td>
             <td> {{employeeList.gender}} </td>
             <td> {{employeeList.email}} </td>
             <td> {{employeeList.phone}} </td>
@@ -20,5 +21,6 @@
             <td> {{employeeList.salary}} </td>
             <td> <input type="checkbox" value="isEmployee" [checked] = "employeeList.isEmployee" 
                 onclick="return false;"></td>
+        </ng-container>
     </tr>
 <table>
