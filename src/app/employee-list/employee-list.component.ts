@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpService } from 'src/app/http-service.service';
+import { Employee } from './model/employee';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employee-list',
@@ -7,13 +9,13 @@ import { HttpService } from 'src/app/http-service.service';
   styleUrls: ['./employee-list.component.css']
 })
 export class EmployeeListComponent {
-  employees: any = null;
+  employees:  any = null;
 
-  constructor(private httpS: HttpService) {
+  constructor(private httpS: HttpService, private router: Router) {
     this.getAllEmployees();
   }
   
   getAllEmployees() {
-    this.httpS.getAll().subscribe(emp => this.employees = emp)
+    this.httpS.getAll().subscribe(rs => this.employees = rs)
   }  
 }

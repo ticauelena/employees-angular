@@ -9,6 +9,7 @@
         <th th class="width-column"> Hire Date </th>
         <th th class="width-column"> Worked Type </th>
         <th> Salary </th>
+        <th> Actions </th>
     </tr>
     <tr *ngFor="let employeeList of employees"> 
             <td> {{employeeList.id}} </td>
@@ -19,5 +20,9 @@
             <td> {{employeeList.hireDate}} </td>
             <td> {{employeeList.workedType}} </td>
             <td> {{employeeList.salary}} </td>
+            <td>
+                <button> Edit </button>
+                <button> Delete </button>
+            </td>
     </tr>
 <table>
