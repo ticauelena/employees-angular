@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 
+
 const SERVER_URL = "http://localhost:8080/employees/";
 
 @Injectable({
@@ -13,5 +14,9 @@ export class HttpService {
 
   getAll() {
     return this.http.get(SERVER_URL);
+  }
+
+  deleteById(id: any) {
+    return this.http.delete(SERVER_URL + 'delete/' + id);
   }
 }
