@@ -1,6 +1,6 @@
 export class Employee {
     id: number | null;
-    name: String | null;
+    employeeName: String | null;
     gender: String | null;
     email: String | null;
     phone: String | null;
@@ -9,10 +9,10 @@ export class Employee {
     salary: number | null;
     isEmployee: Boolean | null;
 
-    constructor (id:number, name: String, gender: String, email: String, phone: String, hireDate: Date,
+    constructor (id:number, employeeName: String, gender: String, email: String, phone: String, hireDate: Date,
          workeedType: String, salary: number, isEmployee: Boolean) {
             this.id = id || null;
-            this.name = name || null;  
+            this.employeeName = employeeName || null;  
             this.gender = gender || null; 
             this.email = email || null;
             this.phone = phone || null; 

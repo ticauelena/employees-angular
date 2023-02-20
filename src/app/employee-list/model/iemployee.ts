@@ -1,6 +1,6 @@
 export interface IEmployee {
     id: number;
-    name: String;
+    employeeName: String;
     gender: String;
     email: String;
     phone: String;
