@@ -1,26 +1,23 @@
 <h1>Employee List Works!</h1>
 <table>
     <tr> 
-        <th> Name </th>
+        <th> Id </th>
+        <th> Employee Name </th>
         <th> Gender </th>
         <th> Email </th >
         <th> Phone </th>
         <th th class="width-column"> Hire Date </th>
-        <th th class="width-column"> Workeed Type </th>
+        <th th class="width-column"> Worked Type </th>
         <th> Salary </th>
-        <th> Is Employee? </th>
     </tr>
-    <tr *ngFor="let employeeList of data"> 
-        <ng-container *ngIf="employeeList.isEmployee === true">
-             <td> {{employeeList.name}} </td>
+    <tr *ngFor="let employeeList of employees"> 
+            <td> {{employeeList.id}} </td>
+            <td> {{employeeList.employeeName}} </td>
             <td> {{employeeList.gender}} </td>
             <td> {{employeeList.email}} </td>
             <td> {{employeeList.phone}} </td>
             <td> {{employeeList.hireDate}} </td>
-            <td> {{employeeList.workeedType}} </td>
+            <td> {{employeeList.workedType}} </td>
             <td> {{employeeList.salary}} </td>
-            <td> <input type="checkbox" value="isEmployee" [checked] = "employeeList.isEmployee" 
-                onclick="return false;"></td>
-        </ng-container>
     </tr>
 <table>

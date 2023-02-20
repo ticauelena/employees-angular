@@ -5,8 +5,7 @@ export interface IEmployee {
     email: String;
     phone: String;
     hireDate: Date;
-    workeedType: String;
+    workedType: String;
     salary: number;
-    isEmployee: Boolean;
 }
       

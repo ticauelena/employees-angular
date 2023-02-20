@@ -5,21 +5,20 @@ export class Employee {
     email: String | null;
     phone: String | null;
     hireDate: Date | null;
-    workeedType: String | null;
+    workedType: String | null;
     salary: number | null;
-    isEmployee: Boolean | null;
 
     constructor (id:number, employeeName: String, gender: String, email: String, phone: String, hireDate: Date,
-         workeedType: String, salary: number, isEmployee: Boolean) {
+         workedType: String, salary: number) {
             this.id = id || null;
             this.employeeName = employeeName || null;  
             this.gender = gender || null; 
             this.email = email || null;
             this.phone = phone || null; 
             this.hireDate = hireDate || null;
-            this.workeedType = workeedType || null;
-            this.salary = salary;
-            this.isEmployee = isEmployee;
+            this.workedType = workedType || null;
+            this.salary = salary || null;
+    
         }
 }
       
