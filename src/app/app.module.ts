@@ -8,13 +8,15 @@ import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EditEmployeesComponent } from './edit-employees/edit-employees.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeesComponent,
     EmployeeListComponent,
-    EditEmployeesComponent
+    EditEmployeesComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
