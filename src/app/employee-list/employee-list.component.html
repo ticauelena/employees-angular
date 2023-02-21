@@ -1,28 +1,31 @@
-<h1>Employee List Works!</h1>
+<h1>Company Employees</h1>
+
+<a routerLink="/create">Add</a>
+
 <table>
     <tr> 
-        <th> Id </th>
-        <th> Employee Name </th>
+        <th> ID </th>
+        <th> Name </th>
         <th> Gender </th>
         <th> Email </th >
         <th> Phone </th>
         <th th class="width-column"> Hire Date </th>
-        <th th class="width-column"> Worked Type </th>
+        <th th class="width-column"> Work Type </th>
         <th> Salary </th>
         <th> Actions </th>
     </tr>
-    <tr *ngFor="let employeeList of employees"> 
-            <td> {{employeeList.id}} </td>
-            <td> {{employeeList.employeeName}} </td>
-            <td> {{employeeList.gender}} </td>
-            <td> {{employeeList.email}} </td>
-            <td> {{employeeList.phone}} </td>
-            <td> {{employeeList.hireDate}} </td>
-            <td> {{employeeList.workedType}} </td>
-            <td> {{employeeList.salary}} </td>
+    <tr *ngFor="let employee of employees"> 
+            <td> {{employee.id}} </td>
+            <td> {{employee.employeeName}} </td>
+            <td> {{employee.gender}} </td>
+            <td> {{employee.email}} </td>
+            <td> {{employee.phone}} </td>
+            <td> {{employee.hireDate}} </td>
+            <td> {{employee.workedType}} </td>
+            <td> {{employee.salary}} </td>
             <td>
-                <button> Edit </button>
-                <button (click)="deleteEmployee(employeeList)"> Delete </button>
+                <a routerLink="/edit/{{employee.id}}">Edit</a>
+                <button (click)="deleteEmployee(employee)">Delete</button>
             </td>
     </tr>
 <table>

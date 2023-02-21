@@ -1,7 +1,7 @@
     h1 {
         text-align: center;
         color: black ;
-        font-size: large;
+        font-size: 25;
      }
      table{
         width: 70%;
@@ -41,3 +41,9 @@
    .width-column {
     width: 15%;
  }
+
+ a  {
+   text-align: center;
+   color: brown ;
+   font-size: large;
+}  

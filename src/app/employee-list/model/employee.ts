@@ -8,8 +8,8 @@ export class Employee {
     workedType: String | null;
     salary: number | null;
 
-    constructor (id:number, employeeName: String, gender: String, email: String, phone: String, hireDate: Date,
-         workedType: String, salary: number) {
+    constructor (id?:number, employeeName?: String, gender?: String, email?: String, phone?: String, 
+        hireDate?: Date, workedType?: String, salary?: number) {
             this.id = id || null;
             this.employeeName = employeeName || null;  
             this.gender = gender || null; 
@@ -18,7 +18,6 @@ export class Employee {
             this.hireDate = hireDate || null;
             this.workedType = workedType || null;
             this.salary = salary || null;
-    
         }
 }
       

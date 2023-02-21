@@ -22,6 +22,7 @@ export class EmployeeListComponent {
   deleteEmployee(employee: any) {
     if (confirm(`Are you sure that you want to delete ${employee.employeeName}?`)) {
       this.httpS.deleteById(employee.id).subscribe(rs => {
+        console.log(rs)
         this.getAllEmployees();
       })
     }

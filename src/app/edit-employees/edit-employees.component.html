@@ -1,0 +1,59 @@
+<div class="container">
+
+    <h2>{{employee.id ? 'Update' : 'Add'}} employee</h2>
+
+    <div>
+        <div class="row">
+            <label class="col-sm-2 col-form-label-lg">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control form-control-sm" [(ngModel)]="employee.employeeName"/>
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-2 col-form-label-lg">Gender</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control form-control-sm" [(ngModel)]="employee.gender" />
+            </div>
+        </div>
+
+        <div class="row">
+            <label class="col-sm-2 col-form-label-lg">Email</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control form-control-sm" [(ngModel)]="employee.email" />
+            </div>
+        </div>
+
+        <div class="row">
+            <label class="col-sm-2 col-form-label-lg">Phone</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control form-control-sm" [(ngModel)]="employee.phone" />
+            </div>
+        </div>
+
+        <div class="row">
+            <label class="col-sm-2 col-form-label-lg">Hire Date</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control form-control-sm" [(ngModel)]="employee.hireDate" />
+            </div>
+        </div>
+
+        <div class="row">
+            <label class="col-sm-2 col-form-label-lg">Work Type</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control form-control-sm" [(ngModel)]="employee.workedType" />
+            </div>
+        </div>
+
+        <div class="row">
+            <label class="col-sm-2 col-form-label-lg">Salary</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control form-control-sm" [(ngModel)]="employee.salary">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary" (click)="submitEmployee()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
