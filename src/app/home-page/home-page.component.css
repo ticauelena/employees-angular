@@ -1,16 +1,19 @@
-/* div{
-    z-index: -1;
-    content: "";
-    background-image:
-     url(https://sourceonepartners.com/wp-content/uploads/2014/04/importance_Background_screening_resized.jpg);
-       background-repeat: no-reapeat;
-       background-position: 50% 50%;
-       background-attachment: fixed;
-       background-size: cover;
-       position: absolute;
-       top: 0px;
-       right: 0px;
-       bottom: 0px;
-       left: 0px;
-       opacity: 0.35; 
-    } */
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: left;
+  color:blueviolet ;
+  text-align: justify;
+  margin-left: 40px;
+  font-size: large;
+}
+
+.img{
+ width:73%;
+ background-repeat: no-reapeat;
+ background-size: cover;
+ position: relative;
+ background-position: center;
+}

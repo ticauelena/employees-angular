@@ -5,8 +5,8 @@ import { EditEmployeesComponent } from './edit-employees/edit-employees.componen
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 const routes: Routes = [
-  {path: '', component: HomePageComponent},
-  { path: '', redirectTo: 'employee-list', pathMatch: 'full' },
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'home', component: HomePageComponent},
   { path: 'employee-list', component: EmployeeListComponent },
   { path: 'create', component: EditEmployeesComponent },
   { path: 'edit/:id', component: EditEmployeesComponent }
