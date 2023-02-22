@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EditEmployeesComponent } from './edit-employees/edit-employees.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     EmployeeListComponent,
     EditEmployeesComponent,
     HomePageComponent,
-    NavbarComponent
+    NavbarComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
